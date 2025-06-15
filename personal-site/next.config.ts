@@ -1,11 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
   output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true
   },
-  trailingSlash: true, // Ensures directory-style URLs (needed for GitHub Pages)
-  assetPrefix: './',
-};
+  basePath: '/dylankinsey6.github.io',
+  assetPrefix: '/dylankinsey6.github.io'
+}
 
-module.exports = nextConfig;
+export default nextConfig
