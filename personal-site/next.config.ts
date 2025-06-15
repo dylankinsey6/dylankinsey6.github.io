@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true, // Ensures directory-style URLs (needed for GitHub Pages)
-  assetPrefix: 'https://dylankinsey6.github.io',
+  assetPrefix: './',
 };
 
 module.exports = nextConfig;
